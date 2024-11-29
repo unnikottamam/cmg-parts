@@ -425,3 +425,15 @@ function custom_woo_price_html($price, $product)
 }
 
 remove_action('woocommerce_before_single_product_summary', 'woocommerce_show_product_sale_flash', 10);
+
+add_action('woocommerce_cart_calculate_fees', 'add_payment_processing_fee');
+function add_payment_processing_fee()
+{
+    if (is_admin() && !defined('DOING_AJAX')) {
+        return;
+    }
+
+    $percentage = 2.9;
+    $fee = (WC()->cart->cart_contents_total + WC()->cart->shipping_total) * $percentage / 100;
+    WC()->cart->add_fee('Payment Processing Fee', $fee);
+}
