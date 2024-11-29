@@ -1,0 +1,49 @@
+.machinery {
+  &__imgs {
+    max-width: 378px;
+  }
+  &__thumbs {
+    gap: 0.21rem;
+    > * {
+      max-width: 68px;
+      width: 100%;
+    }
+  }
+}
+
+.tab {
+  &-btns {
+    button {
+      &:hover {
+        border-color: $primary;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .machinery {
+    &__imgs {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &__right {
+      padding-left: 400px;
+    }
+    &__gallery {
+      top: 8rem;
+    }
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .machinery {
+    &__imgs {
+      max-width: 304px;
+    }
+    &__right {
+      padding-left: 320px;
+    }
+  }
+}

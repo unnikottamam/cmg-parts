@@ -1,0 +1,146 @@
+$primary: #00548c;
+$secondary: #EF820D;
+$success: #158300;
+$danger: #ba0c32;
+$dark: #002e4d;
+
+$white: #fffdf6;
+$black: #031403;
+$body-color: $black;
+$body-bg: #fff;
+
+$yellow: $secondary;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "danger": $danger,
+  "success": $success,
+  "dark": $dark,
+);
+$custom-colors: (
+  "white": $white,
+  "black": $black,
+);
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$body-line-height: 1.45;
+$font-size-base: 1rem;
+$small-font-size: 0.75em !default;
+$font-weight-bolder: 700;
+$font-weight-semibold: 500;
+$font-size-sm: $font-size-base * 0.875;
+$font-family-sans-serif: "Roboto", sans-serif;
+$headings-font-weight: 700;
+$headings-margin-bottom: 1.2rem;
+$headings-line-height: 0.9;
+$headings-color: $primary;
+$h6-font-size: $font-size-base * 0.9;
+
+$line-height-base: 1.35;
+$headings-line-height: 1.1;
+
+$btn-padding-y: 0.65rem;
+$btn-padding-x: 1.5rem;
+$btn-font-weight: 400;
+$btn-font-size: 0.85rem;
+$btn-font-weight: $font-weight-semibold;
+$btn-line-height: 1.15;
+$btn-border-width: 1px;
+$border-radius: 0.35rem;
+$btn-focus-width: 0;
+$border-radius-lg: 0.65rem;
+$btn-padding-y-lg: 0.85rem;
+$btn-padding-x-lg: 2rem;
+$btn-font-size-lg: 1rem;
+$border-radius-sm: 0.25rem;
+$btn-padding-y-sm: 0.45rem;
+$btn-padding-x-sm: 0.75rem;
+$btn-font-size-sm: 0.75rem;
+// $btn-focus-box-shadow: 0px 3px 30px -7px $black_20;
+// $btn-active-box-shadow: 0px 3px 30px -7px $black_20;
+
+$gradient: linear-gradient(225deg, rgba($body-bg, 1), rgba($body-bg, 0));
+
+$spacer: 0.4rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 1,
+  2: $spacer * 2,
+  3: $spacer * 3 * 1.25,
+  4: $spacer * 4 * 2.25,
+  5: $spacer * 5 * 2,
+  6: $spacer * 6 * 2.25,
+  7: $spacer * 6 * 2.75,
+  8: $spacer * 6 * 3.25,
+);
+
+$link-decoration: none;
+$link-color: $primary;
+$link-hover-color: $secondary;
+$border-width: 0.6px;
+$border-color: $primary;
+
+// Navbar Toggle
+$navbar-toggler-padding-y: 0.75rem;
+$navbar-toggler-padding-x: 0.75rem;
+$navbar-toggler-font-size: $font-size-base;
+$navbar-toggler-border-radius: 50%;
+$navbar-toggler-focus-width: 0;
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$primary}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+$navbar-light-toggler-border-color: $primary;
+
+// NavLink
+$nav-link-font-size: 1rem;
+$nav-link-padding-y: 0.75rem;
+$nav-link-padding-x: 0.5rem;
+
+$nav-link-color: $white;
+$navbar-color: $white;
+$nav-link-hover-color: $white;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, 0.85);
+$navbar-dark-active-color: $white;
+$navbar-dark-icon-color: $navbar-dark-color;
+
+// NavBar
+$navbar-padding-y: 0;
+$navbar-nav-link-padding-x: 1.15rem;
+
+$navbar-light-color: $black;
+$navbar-light-hover-color: $primary;
+$navbar-light-active-color: $primary;
+
+// NavTab
+$nav-tabs-border-color: transparent;
+$nav-tabs-border-radius: 0;
+$nav-tabs-link-hover-border-color: transparent;
+$nav-tabs-link-active-bg: $primary;
+$nav-tabs-link-active-color: $white;
+$nav-tabs-link-active-border-color: transparent;
+
+// Modal
+$modal-inner-padding: 1.25rem;
+$modal-footer-margin-between: 0.75rem;
+$modal-dialog-margin: 0.75rem;
+$modal-backdrop-opacity: 0.6;
+$modal-content-border-radius: 1rem;
+
+// Card
+$card-spacer-y: $spacer * 2;
+$card-spacer-x: $spacer * 2;
+$card-title-spacer-y: $spacer * 2;
+$card-border-color: $primary;
+$card-border-radius: 0;
+$card-box-shadow: null;
+$card-inner-border-radius: 0;
+$card-img-overlay-padding: $spacer * 2;
+
+// Dropdown
+$dropdown-min-width: 4rem;
+
+// List Group
+$list-group-item-padding-y: 0.75rem;
+$list-group-item-padding-x: 1rem;
+$list-group-bg: $white;

@@ -1,0 +1,44 @@
+{
+  "name": "cmg-website",
+  "version": "1.0.0",
+  "description": "cmg-website",
+  "scripts": {
+    "build": "webpack --mode=development --progress --stats=minimal",
+    "production": "webpack --mode=production --progress --stats=minimal --devtool=source-map",
+    "watch": "webpack --mode=development --watch",
+    "start": "webpack-dev-server --open --mode=development",
+    "clear": "del-cli dist"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Code Awesome",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "tiny-slider": "^2.9.4"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.0",
+    "css-loader": "^6.9.0",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "del-cli": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "image-minimizer-webpack-plugin": "^3.8.3",
+    "image-webpack-loader": "^8.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^2.7.7",
+    "prettier": "^3.1.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "svg-url-loader": "^8.0.0",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
+    "webpack-manifest-plugin": "^5.0.0"
+  }
+}
