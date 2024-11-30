@@ -51,26 +51,25 @@ function coast_machinery_woocommerce_scripts()
             $font_path = WC()->plugin_url() . '/assets/fonts/';
             $inline_font =
                 '@font-face {
-			font-family: "star";
-			src: url("' .
-                $font_path .
-                'star.eot");
-			src: url("' .
-                $font_path .
-                'star.eot?#iefix") format("embedded-opentype"),
-				url("' .
-                $font_path .
-                'star.woff") format("woff"),
-				url("' .
-                $font_path .
-                'star.ttf") format("truetype"),
-				url("' .
-                $font_path .
-                'star.svg#star") format("svg");
-			font-weight: normal;
-			font-style: normal;
-		}';
-
+                    font-family: "star";
+                    src: url("' .
+                        $font_path .
+                        'star.eot");
+                    src: url("' .
+                        $font_path .
+                        'star.eot?#iefix") format("embedded-opentype"),
+                        url("' .
+                        $font_path .
+                        'star.woff") format("woff"),
+                        url("' .
+                        $font_path .
+                        'star.ttf") format("truetype"),
+                        url("' .
+                        $font_path .
+                        'star.svg#star") format("svg");
+                    font-weight: normal;
+                    font-style: normal;
+                }';
             wp_add_inline_style('coast-machinery-woocommerce-style', $inline_font);
         }
     }
@@ -97,7 +96,6 @@ add_filter('woocommerce_enqueue_styles', '__return_empty_array');
 function coast_machinery_woocommerce_active_body_class($classes)
 {
     $classes[] = 'woocommerce-active';
-
     return $classes;
 }
 
@@ -115,10 +113,7 @@ function coast_machinery_woocommerce_related_products_args($args)
         'posts_per_page' => 5,
         'columns' => 5,
     ];
-
-    $args = wp_parse_args($defaults, $args);
-
-    return $args;
+    return wp_parse_args($defaults, $args);
 }
 
 add_filter('woocommerce_output_related_products_args', 'coast_machinery_woocommerce_related_products_args');
@@ -195,7 +190,6 @@ if (!function_exists('coast_machinery_woocommerce_cart_link_fragment')) {
         ob_start();
         coast_machinery_woocommerce_cart_link();
         $fragments['a.cart-contents'] = ob_get_clean();
-
         return $fragments;
     }
 }
